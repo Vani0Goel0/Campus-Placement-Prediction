@@ -14,7 +14,6 @@ This system addresses campus placement forecasting by splitting the problem into
 1. **Stage 1 (Classification):** Evaluates student profiles to predict *whether* a candidate will successfully clear recruitment thresholds and secure a placement offer (Binary Outcome: `1` for Placed, `0` for Not Placed).
 2. **Stage 2 (Regression):** Predicts the *specific starting salary package* offered to successfully placed candidates (Continuous Value Forecasting).
 
-[ Raw Tabular CSV ]│▼[ Preprocessing ] ──► (One-Hot Encoding, Stratified Train/Test Split)│├───► [ Stage 1: Logistic Regression ] ──► Classifies: Placed vs Not Placed│└───► [ Data Masking (Placed Only) ] ──► [ Stage 2: Log-Linear Regression ] ──► Predicts Salary
 ---
 
 ## 📊 Core Statistical Insights (EDA Summary)
@@ -62,4 +61,4 @@ python -m venv venv
 # On Mac/Linux:
 source venv/bin/activate
 2. Download Core Tabular DependenciesBashpip install pandas numpy matplotlib seaborn scipy scikit-learn ipykernel
-3. Notebook Connection SetupLaunch VS Code inside this project directory.Open placement_exploration.ipynb.In the top-right corner, click Select Kernel $\rightarrow$ Python Environments... $\rightarrow$ select the local venv path.Drag your Placement_Data.csv directly into the root folder to supply the relative data path runner.🛠️ Built WithPython 3 - Foundational Programming LanguagePandas & NumPy - Vectorized Matrix Transformations & Data AuditingScikit-Learn - Machine Learning Algorithm Implementations & Data SplittingSeaborn & Matplotlib - Statistical EDA Data Visualizations
+3. Notebook Connection SetupLaunch VS Code inside this project directory.Open placement_exploration.ipynb.In the top-right corner, click Select Kernel $\rightarrow$ Python Environments... $\rightarrow$ select the local venv path.Drag your Placement_Data.csv directly into the root folder to supply the relative data path runner.
